@@ -38,6 +38,8 @@ SPACING SYSTEM (px)
 }
 html {
   font-size: 62.5%;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -49,6 +51,7 @@ body {
 
   /* Only works if there is nothing absolutely 
     positioned in relation to body */
+  overflow-x: hidden;
 }
 
 * {
@@ -127,4 +130,8 @@ body {
 /* HELPER/SETTINGS CLASSES */
 .center-text {
   text-align: center;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }

@@ -34,20 +34,20 @@
     <main>
       <section class="section-hero">
         <div class="hero grid grid--2-cols grid--center-v">
-          <div class="hero-description">
+          <div class="hero-description" id="form">
             <h1 class="primary-heading">
               The money community for the diaspora
             </h1>
             <p class="hero-text">
               Send money home and connect with your community - all in one place
             </p>
-            <form class="hero-form" id="form">
-              <div class="warning no-char-warn hidden">
+            <form class="hero-form">
+              <div class="warning hidden">
                 <ion-icon
                   class="warning-icon"
                   name="warning-outline"
                 ></ion-icon>
-                <p class="warning-text">Please enter your email!</p>
+                <p class="warning-text"></p>
               </div>
               <!-- <div class="warning no-at-warn hidden">
                 <ion-icon
@@ -227,6 +227,25 @@
     <footer class="section-footer">
       <p class="footer-text">Azame LLC &copy; 2023</p>
     </footer>
+
+    <div class="overlay hidden">
+      <div class="modal">
+        <div class="modal-tittle-header">
+          <div class="modal-tittle-box">
+            <ion-icon class="modal-icon" name="checkmark-outline"></ion-icon>
+            <h1 class="modal-heading">Success</h1>
+          </div>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-container">
+          <p>Showing sucessfully joined waitlist</p>
+        </div>
+        <div class="modal-thanks-box">
+          <button class="modal-btn">Thank You</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
     <script
       type="module"
