@@ -1,0 +1,130 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(227, 210, 243);
+}
+
+@font-face {
+  src: url(fonts/Euclid\ Circular\ A\ Regular.ttf);
+  font-family: sem;
+}
+@font-face {
+  src: url(fonts/Euclid\ Circular\ A\ Medium.ttf);
+  font-family: mid;
+}
+@font-face {
+  src: url(fonts/Euclid\ Circular\ A\ Bold.ttf);
+  font-family: bod;
+}
+@font-face {
+  src: url(fonts/Euclid\ Circular\ A\ Regular.ttf);
+  font-family: reg;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: sans-serif; */
+  font-family: mid;
+  line-height: 1;
+  font-weight: 500;
+  color: #121212;
+
+  /* Only works if there is nothing absolutely 
+    positioned in relation to body */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERALS */
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+
+  /* margin-bottom: 9.6; */
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.primary-heading,
+.secondary-heading {
+  font-family: bod;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.primary-heading {
+  font-size: 6.2rem;
+  line-height: 1.2;
+
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 0.8;
+
+  margin-bottom: 4.8rem;
+}
+
+.tertiary-heading {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* HELPER/SETTINGS CLASSES */
+.center-text {
+  text-align: center;
+}

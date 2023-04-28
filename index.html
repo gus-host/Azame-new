@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azame</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header-logo">azame</p>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#features">Features</a></li>
+          <li><a class="main-nav-link" href="#reasons">Why Amaze?</a></li>
+          <li><a class="main-nav-link" href="#join">Try us</a></li>
+          <li>
+            <a href="#form" class="main-nav-link btn btn-header"
+              >Join Waitlist</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero grid grid--2-cols grid--center-v">
+          <div class="hero-description">
+            <h1 class="primary-heading">
+              The money community for the diaspora
+            </h1>
+            <p class="hero-text">
+              Send money home and connect with your community - all in one place
+            </p>
+            <form class="hero-form" id="form">
+              <div class="warning no-char-warn hidden">
+                <ion-icon
+                  class="warning-icon"
+                  name="warning-outline"
+                ></ion-icon>
+                <p class="warning-text">Please enter your email!</p>
+              </div>
+              <!-- <div class="warning no-at-warn hidden">
+                <ion-icon
+                  class="warning-icon"
+                  name="warning-outline"
+                ></ion-icon>
+                <p class="warning-text">Email must contain the @ symbol!</p>
+              </div> -->
+              <input
+                class="hero-email"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+              <!-- <p class="hero-input-text">Email Address</p> -->
+              <a type="submit" class="attr-btn" href="#"
+                ><button type="submit" class="btn form-btn">
+                  Join Waitlist
+                </button></a
+              >
+            </form>
+          </div>
+          <div class="hero-image-box">
+            <img
+              class="hero-image"
+              src="images/hero-img/hero-img.png"
+              alt="A phone displaying an app"
+            />
+            <div class="img-pop-out img-pop-out--1">
+              <div class="pop-out-comp">
+                <div class="pop-out-img-box">
+                  <img
+                    class="customer-1"
+                    src="images/hero-img/ellipse 14.png"
+                    alt="Customer Photo"
+                  />
+                </div>
+                <div class="pop-out-text-box">
+                  <div class="pop-out-col-1">
+                    <span>P2P Exchange</span>
+                    <span>Amezie Sampson</span>
+                  </div>
+                  <div class="pop-out-col-2">
+                    <span>- 40.00 USD</span>
+                    <span>21.02.23</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="img-pop-out img-pop-out--2">
+              <div class="pop-out-comp">
+                <div class="pop-out-img-box">
+                  <img
+                    class="customer-2"
+                    src="images/hero-img/ellipse 21.png"
+                    alt="Customer Photo"
+                  />
+                </div>
+                <div class="pop-out-text-box">
+                  <div class="pop-out-col-1">
+                    <span>Transfer</span>
+                    <span>Sharon Ekwe</span>
+                  </div>
+                  <div class="pop-out-col-2">
+                    <span>- 19.33 USD</span>
+                    <span>21.02.23</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="features">
+        <div class="container">
+          <h2 class="secondary-heading center-text">Azame helps you</h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="feature-box feature-box--1">
+            <img
+              class="feature-icon"
+              src="images/features-icons/feature-icon-1.png"
+              alt="feature icon"
+            />
+            <div class="feature-text-box">
+              <h3 class="tertiary-heading">Send Money</h3>
+              <p>
+                Send money home with the best rates. Track all your transactions
+                in one place.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box feature-box--2">
+            <img
+              class="feature-icon"
+              src="images/features-icons/feature-icon-2.png"
+              alt="feature icon"
+            />
+            <div class="feature-text-box">
+              <h3 class="tertiary-heading">Grow Money</h3>
+              <p>
+                Save and invest for the future you want. Grow your money with
+                trusted partners
+              </p>
+            </div>
+          </div>
+          <div class="feature-box feature-box--3">
+            <img
+              class="feature-icon"
+              src="images/features-icons/feature-icon-3.png"
+              alt="feature icon"
+            />
+            <div class="feature-text-box">
+              <h3 class="tertiary-heading">Join community</h3>
+              <p>
+                Connect with diaspora communities for shared opportunities,
+                experience and more
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-reasons" id="reasons">
+        <div class="container">
+          <h2 class="reasons-heading secondary-heading center-text">
+            Why choose us
+          </h2>
+        </div>
+        <div class="container reasons-container">
+          <ul class="reasons">
+            <li class="reason">
+              <img
+                class="reason-icon"
+                src="images/reasons-icons/reason-icon-1.png"
+                alt="dollar sign"
+              />
+              <p>The best rates for sending money home</p>
+            </li>
+            <li class="reason">
+              <img
+                class="reason-icon"
+                src="images/reasons-icons/reason-icon-2.png"
+                alt="security sign"
+              />
+              <p>Secure, easy to use platform</p>
+            </li>
+            <li class="reason">
+              <img
+                class="reason-icon"
+                src="images/reasons-icons/reason-icon-3.png"
+                alt="circle icon"
+              />
+              <p>Join the community</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cta-section" id="join">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="cta-text">
+              We want to empower you financially while connecting you with your
+              tribe in the diaspora
+            </h2>
+            <a href="#form" class="btn btn-cta">Join Waitlist</a>
+          </div>
+          <div class="cta-img-box">
+            <img
+              class="cta-img"
+              src="images/cta-img.png"
+              alt="The earth with people around it"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer">
+      <p class="footer-text">Azame LLC &copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
