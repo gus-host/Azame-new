@@ -397,11 +397,18 @@
   }
 
   .hero-image {
-    margin-top: -3rem;
+    margin-top: -8rem;
     z-index: 1;
+    width: 100%;
   }
 
   .hero-image-box {
     overflow: hidden;
+  }
+
+  .hero-image-box::before {
+    padding-bottom: 85%;
+    width: 85%;
+    transform: translate(-48%, -60%);
   }
 }
