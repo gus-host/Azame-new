@@ -8,9 +8,9 @@ const btnCloseModal = document.querySelector('.close-modal');
 const btnModalBtn = document.querySelector('.modal-btn');
 const body = document.querySelector('body');
 const attrBtn = document.querySelector('.attr-btn');
-const warning = document.querySelector('.warning');
-const warningText = document.querySelector('.warning-text');
-const heroEmailInput = document.querySelector('.hero-email');
+const modalHeading = document.querySelector('.modal-heading');
+const modalText = document.querySelector('.modal-text');
+const modalIcon = document.querySelector('.modal-icon');
 
 const openModal = function () {
   // if (heroEmail.value.contains('@')) {
@@ -19,26 +19,31 @@ const openModal = function () {
 
   const heroEmail = document.querySelector('.hero-email').value;
   if (heroEmail === '') {
-    attrBtn.removeAttribute('href');
-    warning.classList.remove('hidden');
-    warningText.textContent = 'Please enter your email!';
-
-    heroEmailInput.style.borderColor = 'red';
+    overlay.classList.remove('hidden');
+    body.classList.add('no-vert-scroll');
+    modalHeading.textContent = 'Error';
+    modalText.textContent =
+      'Pls provide text for modal box - showing error message';
+    modalIcon.name = 'backspace-outline';
     // console.log(noCharWarn);
   }
 
   for (let i = 0; i < heroEmail.length; i++) {
-    if (heroEmail[i] === '@') {
+    if (heroEmail[i] === '@' || !heroEmail.includes('@')) {
       overlay.classList.remove('hidden');
       body.classList.add('no-vert-scroll');
-      attrBtn.setAttribute('href', '#');
-      heroEmailInput.style.borderColor = '#ababab';
+    }
+    if (heroEmail[i] === '@') {
+      modalHeading.textContent = 'Success';
+      modalText.textContent =
+        'Pls provide text for modal box - showing successfully joined waitlist';
+      modalIcon.name = 'checkmark-outline';
       document.querySelector('.hero-email').value = '';
     } else if (!heroEmail.includes('@')) {
-      attrBtn.removeAttribute('href');
-      warning.classList.remove('hidden');
-      heroEmailInput.style.borderColor = 'red';
-      warningText.textContent = 'Email must contain the @ symbol!';
+      modalHeading.textContent = 'Error';
+      modalText.textContent =
+        'Pls provide text for modal box - showing error message';
+      modalIcon.name = 'backspace-outline';
     }
   }
 };
@@ -46,9 +51,6 @@ const openModal = function () {
 const closeModal = function () {
   overlay.classList.add('hidden');
   body.classList.remove('no-vert-scroll');
-  attrBtn.setAttribute('href', '#');
-  noCharWarn.classList.add('hidden');
-  noAtWarn.classList.add('hidden');
 };
 
 btnOpenModal.addEventListener('click', openModal);
@@ -87,6 +89,10 @@ allLinks.forEach(function (link) {
         behavior: 'smooth',
       });
     }
+
+    // Closes mobile Navigation
+    if (link.classList.contains('main-nav-link'))
+      headerEl.classList.toggle('nav-open');
   });
 });
 

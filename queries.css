@@ -235,4 +235,164 @@
   .main-nav-list li:not(:last-child) {
     margin-right: 0;
   }
+
+  .main-nav-link:visited,
+  .main-nav-link:link {
+    font-size: 2.4rem;
+  }
+
+  .btn-header:link,
+  .btn-header:visited {
+    font-size: 1.8rem;
+  }
+
+  .feature-text-box p {
+    font-size: 1.4rem;
+  }
+}
+
+/*******************************************/
+/* BELOW 670px (Smaller Tablets */
+/******************************************/
+
+@media (max-width: 42em) {
+  /* html {
+    font-size: 43.75%;
+  } */
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-box--3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    padding: 6.4rem 8rem 0 8rem;
+    row-gap: 4.8rem;
+  }
+
+  .cta-img {
+    width: 70%;
+  }
+
+  .cta-text-box,
+  .cta-img-box {
+    text-align: center;
+  }
+
+  .cta-section {
+    padding-bottom: 9.6rem;
+  }
+
+  .hero-image {
+    width: 68%;
+  }
+
+  .hero-image-box::before {
+    padding-bottom: 60%;
+    width: 60%;
+  }
+}
+
+.overlay {
+  padding: 0 6.4rem;
+}
+
+/*******************************************/
+/* BELOW 525px (Phones */
+/******************************************/
+
+@media (max-width: 33em) {
+  .hero-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-email {
+    margin-bottom: 2.4rem;
+    width: 100%;
+  }
+  .attr-btn {
+    display: block;
+    width: 100%;
+  }
+  .form-btn {
+    width: 100%;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-image {
+    width: 90%;
+  }
+
+  .hero {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .primary-heading,
+  .hero-text {
+    text-align: left;
+  }
+
+  .primary-heading {
+    font-size: 5.2rem;
+  }
+
+  .hero-image-box::before {
+    padding-bottom: 70%;
+    width: 70%;
+  }
+
+  .img-pop-out--1,
+  .img-pop-out--2 {
+    width: 149.33px;
+    height: 34.83px;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-box {
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .cta {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .cta-img {
+    width: 80%;
+  }
+
+  .feature-box.feature-box--1,
+  .feature-box.feature-box--2 {
+    padding: 2.311rem 2.342rem 3.2rem 2rem;
+  }
+
+  .feature-box--3 {
+    padding: 1.6rem 3rem 1.656rem 2.019rem;
+  }
+
+  .overlay {
+    padding: 0 3.2rem;
+  }
+
+  .modal p {
+    line-height: 1.4;
+  }
 }
