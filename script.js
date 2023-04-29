@@ -11,6 +11,7 @@ const attrBtn = document.querySelector('.attr-btn');
 const modalHeading = document.querySelector('.modal-heading');
 const modalText = document.querySelector('.modal-text');
 const modalIcon = document.querySelector('.modal-icon');
+const heroEmail = document.querySelector('.hero-email');
 
 const openModal = function () {
   // if (heroEmail.value.contains('@')) {
@@ -22,8 +23,8 @@ const openModal = function () {
     overlay.classList.remove('hidden');
     body.classList.add('no-vert-scroll');
     modalHeading.textContent = 'Error';
-    modalText.textContent =
-      'Pls provide text for modal box - showing error message';
+    // modalText.textContent =
+    //   'Pls provide text for modal box - showing error message';
     modalIcon.name = 'backspace-outline';
     // console.log(noCharWarn);
   }
@@ -35,14 +36,14 @@ const openModal = function () {
     }
     if (heroEmail[i] === '@') {
       modalHeading.textContent = 'Success';
-      modalText.textContent =
-        'Pls provide text for modal box - showing successfully joined waitlist';
+      // modalText.textContent =
+      //   'Pls provide text for modal box - showing successfully joined waitlist';
       modalIcon.name = 'checkmark-outline';
       document.querySelector('.hero-email').value = '';
     } else if (!heroEmail.includes('@')) {
       modalHeading.textContent = 'Error';
-      modalText.textContent =
-        'Pls provide text for modal box - showing error message';
+      // modalText.textContent =
+      //   'Pls provide text for modal box - showing error message';
       modalIcon.name = 'backspace-outline';
     }
   }
@@ -102,6 +103,13 @@ const headerEl = document.querySelector('.header');
 
 btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
+
+  if (headerEl.classList.contains('nav-open')) {
+    heroEmail.style.opacity = '0.2';
+    // console.log('nigger');
+  } else {
+    heroEmail.style.opacity = '1';
+  }
 });
 
 const sectionHeroEl = document.querySelector('.section-hero');
