@@ -346,11 +346,15 @@
   }
 
   .primary-heading {
-    font-size: 5.2rem;
+    /* font-size: 5.2rem; */
     /* margin-top: 6.4rem; */
-    /* font-size: 44.64px; */
+    font-size: 44.64px;
     /* line-height: 58px; */
     margin-bottom: 1.6rem;
+  }
+
+  .hero {
+    padding-top: 4rem;
   }
 
   .hero-text {
