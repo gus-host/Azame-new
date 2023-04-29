@@ -328,7 +328,7 @@
   }
 
   .section-hero {
-    padding: 0 0 6.4rem 0;
+    padding: 2.4 0 6.4rem 0;
   }
 
   .hero-image {
@@ -346,16 +346,16 @@
   }
 
   .primary-heading {
-    /* font-size: 5.2rem; */
-    margin-top: 6.4rem;
-    font-size: 44.64px;
-    line-height: 58px;
+    font-size: 5.2rem;
+    /* margin-top: 6.4rem; */
+    /* font-size: 44.64px; */
+    /* line-height: 58px; */
     margin-bottom: 1.6rem;
   }
 
   .hero-text {
-    font-size: 18.0591px;
-    line-height: 21px;
+    font-size: 1.80591rem;
+    /* line-height: 21px; */
     margin-bottom: 2.4rem;
   }
 
