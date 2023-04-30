@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "images/Amaze-favicon - 192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/Amaze-favicon - 512.png",
+      "type": "img/png",
+      "sizes": "512x512"
+    }
+  ]
+}
