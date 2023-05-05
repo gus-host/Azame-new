@@ -1,4 +1,33 @@
 'use strict';
+// fetch('http://localhost:5000')
+//   .then(res => {
+//     return res.json();
+//   })
+//   .then(data => {
+//     data;
+//   });
+
+const postEmail = function () {
+  const addEmail = {
+    email: heroEmail.value,
+  };
+  fetch('http://localhost:5000', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: 'User 1',
+      email: heroEmail.value,
+    }),
+  })
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      data;
+    });
+};
 
 // MODAL SHOW AND CLOSE
 const modal = document.querySelector('.modal');
@@ -35,6 +64,7 @@ const openModal = function () {
       body.classList.add('no-vert-scroll');
     }
     if (heroEmail[i] === '@') {
+      postEmail();
       modalHeading.textContent = 'Success';
       // modalText.textContent =
       //   'Pls provide text for modal box - showing successfully joined waitlist';
