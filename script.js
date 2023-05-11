@@ -11,7 +11,7 @@ const postEmail = function () {
   const addEmail = {
     email: heroEmail.value,
   };
-  fetch('http://localhost:5000', {
+  fetch('https://try-host.azame.io', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

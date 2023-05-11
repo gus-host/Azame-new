@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv/config');
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -10,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 mongoose.connect(
-  'mongodb+srv://Emeria1:chrisobi@cluster0.7juxcfk.mongodb.net/emails',
+  process.env.DB_CONNECTION,
   { useNewUrlParser: true },
   { useUnifiedTopology: true }
 );
@@ -22,6 +23,10 @@ const emailsSchema = {
 
 const Email = mongoose.model('Email-cols', emailsSchema);
 
+app.get('/', function (req, res) {
+  res.set('Content-Type', 'text/html; charset=utf-8');
+  res.send('Azame.io is connected');
+});
 app.post('/', function (req, res) {
   let newEmail = new Email({
     email: req.body.email,
